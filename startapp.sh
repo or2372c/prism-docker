@@ -8,10 +8,10 @@ mkdir -p /config/prism
 # mkdir -p /config/multimc/MultiMC
 # mkdir -p /config/multimc/MultiMC/bin
 export HOME=/config/prism
-cp /prism/Prism /config/prism/Prism
+cp /prism/PrismLauncher /config/prism/PrismLauncher
 cp -r /prism/bin /config/prism/bin
 cd $HOME
 
 # exec cat
-exec prismlauncher
+exec PrismLauncher
 # exec minecraft-launcher
