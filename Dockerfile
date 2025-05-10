@@ -1,5 +1,5 @@
 # Pull base image.
-FROM jlesage/baseimage-gui:ubuntu-22.04
+FROM jlesage/baseimage-gui:ubuntu-18.04
 
 RUN apt-get update
 
