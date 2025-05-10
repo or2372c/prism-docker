@@ -18,7 +18,7 @@ RUN wget -qO - 'https://proget.makedeb.org/debian-feeds/prebuilt-mpr.pub' | gpg 
     apt-get update
 VOLUME ["/config/prism/instances"]
 VOLUME ["/config"]
-RUN apt-get install prismlauncher
+RUN apt-get install -y prismlauncher
 
 #MultiMC. Download, extract and allow execute.
 #VOLUME ["/config/prism/instances"]
