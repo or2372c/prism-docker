@@ -10,6 +10,9 @@ RUN apt-get install -y wget software-properties-common ca-certificates apt-trans
     apt-get update && \
     apt-get install -y java-21-amazon-corretto-jdk
 
+#add user
+RUN useradd prism
+
 # Install multimc dependices.
 RUN apt-get install -y libqt5core5a libqt5network5 libqt5concurrent5 libqt5gui5 libqt5xml5 desktop-file-utils
 # install prism
