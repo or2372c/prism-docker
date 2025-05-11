@@ -28,7 +28,7 @@ VOLUME ["/config"]
 #VOLUME ["/config/prism/instances"]
 #VOLUME ["/config"]
 WORKDIR /prism
-RUN wget -O- -q --show-progress --progress=dot:mega "https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-Linux-Qt6-Portable-9.4.tar.gz" | tar xvz --transform='s,Prism/,,' && \
+RUN wget -O- -q --show-progress --progress=dot:mega "https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-Linux-Qt6-Portable-9.4.tar.gz" | tar xvz --transform='s,PrismLauncher/,,' && \
     chmod +x PrismLauncher && \
     ls -l
 
