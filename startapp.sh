@@ -8,10 +8,10 @@ mkdir -p /config/prism
 # mkdir -p /config/multimc/MultiMC
 # mkdir -p /config/multimc/MultiMC/bin
 export HOME=/config/prism
-#cp /prism/PrismLauncher.AppImage /config/prism/PrismLauncher.AppImage
-#cp -r /prism/bin /config/prism/bin
+cp /prism/PrismLauncher /config/prism/PrismLauncher
+cp -r /prism/bin /config/prism/bin
 cd $HOME
 
 # exec cat
-exec PrismLauncher-Linux-x86_64.AppImage
+exec PrismLauncher
 # exec minecraft-launcher
