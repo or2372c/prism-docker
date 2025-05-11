@@ -1,5 +1,4 @@
 #!/bin/sh
-exec /usr/bin/xterm
 set -e # Exit immediately if a command exits with a non-zero status.
 set -u # Treat unset variables as an error.
 
@@ -15,3 +14,6 @@ cd $HOME
 # exec cat
 exec PrismLauncher
 # exec minecraft-launcher
+
+#debug
+exec /usr/bin/xterm
