@@ -8,7 +8,7 @@ mkdir -p /config/prism
 # mkdir -p /config/multimc/MultiMC
 # mkdir -p /config/multimc/MultiMC/bin
 export HOME=/config/prism
-cp /prism/PrismLauncher /config/prism/PrismLauncher
+cp /prism/PrismLauncher.AppImage /config/prism/PrismLauncher.AppImage
 cp -r /prism/bin /config/prism/bin
 cd $HOME
 
