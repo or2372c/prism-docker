@@ -21,16 +21,16 @@ VOLUME ["/config/prism/instances"]
 VOLUME ["/config"]
 #RUN apt-get install -y prismlauncher
 
-RUN curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-Linux-x86_64.AppImage
-RUN chmod +x ./PrismLauncher-Linux-x86_64.AppImage
+#RUN curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-Linux-x86_64.AppImage
+#RUN chmod +x ./PrismLauncher-Linux-x86_64.AppImage
 
 #MultiMC. Download, extract and allow execute.
 #VOLUME ["/config/prism/instances"]
 #VOLUME ["/config"]
-#WORKDIR /prism
-#RUN wget -O- -q --show-progress --progress=dot:mega "https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-Linux-Qt6-Portable-9.4.tar.gz" | tar xvz --transform='s,Prism/,,' && \
-#    chmod +x Prism && \
-#    ls -l
+WORKDIR /prism
+RUN wget -O- -q --show-progress --progress=dot:mega "https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-Linux-Qt6-Portable-9.4.tar.gz" | tar xvz --transform='s,Prism/,,' && \
+    chmod +x PrismLauncher && \
+    ls -l
 
 # Set the name of the application.
 ENV APP_NAME="Prism - Minecraft"
