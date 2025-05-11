@@ -13,5 +13,5 @@ export HOME=/config/prism
 cd $HOME
 
 # exec cat
-exec PrismLauncher.AppImage
+exec PrismLauncher-Linux-x86_64.AppImage
 # exec minecraft-launcher
