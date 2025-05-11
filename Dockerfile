@@ -1,6 +1,6 @@
 # Pull base image.
 FROM jlesage/baseimage-gui:ubuntu-20.04
-
+RUN add-pkg xterm
 RUN apt-get update
 
 # Install Java https://docs.papermc.io/misc/java-install
