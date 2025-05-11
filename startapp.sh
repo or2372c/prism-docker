@@ -10,7 +10,7 @@ export HOME=/config/prism
 cp /prism/PrismLauncher /config/prism/PrismLauncher
 cp -r /prism/bin /config/prism/bin
 cd $HOME
-
+su prism
 # exec cat
 exec PrismLauncher
 # exec minecraft-launcher
