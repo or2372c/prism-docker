@@ -13,5 +13,5 @@ cp -r /prism/bin /config/prism/bin
 cd $HOME
 
 # exec cat
-exec PrismLauncher
+exec PrismLauncher.AppImage
 # exec minecraft-launcher
